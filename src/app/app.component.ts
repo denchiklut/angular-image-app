@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UnsplashService} from './unsplash.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-image-app';
+  images;
+
+  constructor(private service: UnsplashService) { }
+
+  onTerm(term) {
+    this.service.getImage(term).subscribe(response => this.images = response.results);
+  }
 }

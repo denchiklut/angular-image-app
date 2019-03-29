@@ -1,0 +1,13 @@
+<div class="ui segment">
+  <form class="ui form" (submit)="onSubmit()">
+    <div class="ui fluid action input">
+      <input
+        type="text"
+        placeholder="Search..."
+        name="term"
+        [(ngModel)]="term"
+      />
+      <button type="submit" class="ui button">Search</button>
+    </div>
+  </form>
+</div>
