@@ -1,5 +1,7 @@
 # AngularImageApp
 
+Demo: https://denchiklut.github.io/angular-image-app/
+
 ![Angular image app](https://pbs.twimg.com/media/D25_JS2XcAALKIR.jpg)
 
 
