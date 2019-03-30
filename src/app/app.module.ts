@@ -14,7 +14,7 @@ import { ImageListComponent } from './image-list/image-list.component';
   declarations: [
     AppComponent,
     SearchBarComponent,
-    ImageListComponent
+    ImageListComponent,
   ],
   imports: [
     BrowserModule,

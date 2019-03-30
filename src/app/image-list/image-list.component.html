@@ -1,5 +1,9 @@
-<div class="image-list">
-  <img *ngFor="let image of imageList" [src]="image.urls.regular" />
+<div class="image-list ui container">
+  <ng-container *ngFor="let image of imageList">
+    <div style="text-align: center;" [style.grid-row-end] = getSpan(image) >
+      <img  [src]="image.urls.regular" />
+    </div>
+  </ng-container>
 </div>
 
 
