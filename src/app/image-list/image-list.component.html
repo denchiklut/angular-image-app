@@ -1,7 +1,14 @@
 <div class="image-list ui container">
   <ng-container *ngFor="let image of imageList">
     <div style="text-align: center;" [style.grid-row-end] = getSpan(image) >
-      <img  [src]="image.urls.regular" />
+      <div class="img-container">
+        <img  [src]="image.urls.regular" />
+
+        <div class="img-title">
+          <img class="ui middle circular aligned tiny image" [src]="image.user.profile_image.medium" />
+          <span>{{image.user.instagram_username ? image.user.instagram_username : image.user.name}}</span>
+        </div>
+      </div>
     </div>
   </ng-container>
 </div>

@@ -2,8 +2,37 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: 10px;
+
+
+  .img-title {
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    left: 0;
+    background: #040404b0;
+    color: white;
+    text-align: left;
+    padding: 8px;
+
+    img {
+      width: 35px!important;
+      margin-right: 15px!important;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .img-container {
+    position: relative;
+    width: 250px;
+
+    img {
+      width: 250px;
+      box-shadow: 3px 3px 5px #00000047;
+    }
+  }
+
 }
 
-img {
-  width: 250px;
-}

@@ -14,7 +14,7 @@ export class ImageListComponent {
   constructor(private sanitizer: DomSanitizer) { }
 
   getSpan(image) {
-    this.dangerousStyle = `span ${Math.floor((image.height / (image.width / 250)) / 10)}`;
+    this.dangerousStyle = `span ${Math.floor((image.height / (image.width / 250)) / 10) + 2}`;
     return this.trustedStyle = this.sanitizer.bypassSecurityTrustStyle(this.dangerousStyle);
   }
 }
