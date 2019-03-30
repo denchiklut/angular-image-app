@@ -1,4 +1,4 @@
-<div class="ui segment">
+<div class="ui segment search-bar">
   <form class="ui form" (submit)="onSubmit()">
     <div class="ui fluid action input">
       <input
@@ -6,6 +6,7 @@
         placeholder="Search..."
         name="term"
         [(ngModel)]="term"
+        autocomplete='off'
       />
       <button type="submit" class="ui button">Search</button>
     </div>
