@@ -2,9 +2,7 @@
 
 Demo: https://denchiklut.github.io/angular-image-app/
 
-![Angular image app](https://pbs.twimg.com/media/D25_JS2XcAALKIR.jpg)
-
-
+![]({{site.baseurl}}/https://pbs.twimg.com/media/D25_JS2XcAALKIR.jpg)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
 ## Development server
